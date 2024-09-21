@@ -1,0 +1,7 @@
+.rotation-character {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 125px;
+  padding-top: 15px;
+}

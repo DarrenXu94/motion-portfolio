@@ -1,16 +1,33 @@
 ---
-
+import Hero from "../components/hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Projects from "../components/projects.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <main>
+    <Hero />
+    <Projects />
+  </main>
+</BaseLayout>
+
+<script>
+  import { animate, stagger } from "motion";
+
+  animate(
+    ".stagger-container",
+    { transform: "translateY(0)", opacity: 1 },
+    {
+      delay: stagger(1),
+      duration: 0.5,
+      easing: [0.22, 0.03, 0.26, 1],
+    }
+  );
+</script>
+<style>
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+</style>

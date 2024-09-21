@@ -1,0 +1,64 @@
+---
+import { projects } from "../consts/projects";
+import ProjectCard from "./projectCard.astro";
+---
+
+<div class="stagger-container wrapper">
+  <h2>My Projects</h2>
+
+  <ul class="grid" id="projects-grid">
+    {
+      projects.map((project) => (
+        <li class="project-item">
+          <ProjectCard project={project} />
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  h2 {
+    margin-bottom: 2rem;
+  }
+  h2:after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 3px;
+    background: black;
+    margin-top: 2rem;
+  }
+
+  .project-item {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  .grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  @media (min-width: 50em) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+  }
+</style>
+
+<script>
+  import { inView, animate } from "motion";
+
+  inView(".project-item", (info) => {
+    animate(
+      info.target,
+      { transform: "translateY(0)", opacity: 1 },
+      { easing: [0.22, 0.03, 0.26, 1] }
+    );
+  });
+</script>

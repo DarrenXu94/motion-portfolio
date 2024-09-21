@@ -1,0 +1,67 @@
+---
+// Has to be imported before
+import "../styles/hero.css";
+---
+
+<div class="stagger-container">
+  <div class="banner">
+    <div class="circle">
+      <div class="logo"></div>
+      <div class="text">
+        <p>Software Developer - Darren Xu -</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .banner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    background: url("../assets/cartoon.png");
+    background-size: cover;
+  }
+  .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+  }
+
+  @keyframes rotateText {
+    0% {
+      transform: rotate(-360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+</style>
+<script>
+  const text = document.querySelector(".text p") as HTMLElement;
+  text.innerHTML = text.innerText
+    .split("")
+    .map(
+      (char, i) =>
+        `<span class="rotation-character" style="transform:rotate(${i * 11}deg)">${char}</span>`
+    )
+    .join("");
+</script>

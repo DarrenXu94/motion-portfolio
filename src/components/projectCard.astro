@@ -1,17 +1,33 @@
 ---
 const { name, preview, description, link, imgLink } = Astro.props.project;
+import Icon from "./icon.astro";
 ---
 
-<a class="card" href={link}>
-  <span class="title">{name}</span>
-  <img src={imgLink} alt={name || ""} loading="lazy" decoding="async" />
-</a>
+<div class="project-card">
+  <a class="card" href={preview}>
+    <span class="title">{name}</span>
+    <img src={imgLink} alt={name || ""} loading="lazy" decoding="async" />
+    <p>{description}</p>
+  </a>
+  <a href={link}>View code <Icon icon="github-logo" /></a>
+</div>
 
 <style>
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+
+  .title {
+    outline: 2px solid var(--gray-200);
+  }
   .card {
+    width: 100%;
     display: grid;
     grid-template: auto 1fr / auto 1fr;
-    height: 11rem;
+    height: 15rem;
     background: var(--gradient-subtle);
     border: 1px solid var(--gray-800);
     border-radius: 0.75rem;
@@ -28,6 +44,11 @@ const { name, preview, description, link, imgLink } = Astro.props.project;
     box-shadow: var(--shadow-md);
   }
 
+  .card p {
+    padding: 0.5rem 1rem;
+    font-size: var(--text-md);
+  }
+
   .title {
     grid-area: 1 / 1 / 2 / 2;
     z-index: 1;
@@ -36,6 +57,7 @@ const { name, preview, description, link, imgLink } = Astro.props.project;
     background: var(--gray-999);
     color: var(--gray-200);
     border-radius: 0.375rem;
+    width: fit-content;
   }
 
   img {

@@ -262,3 +262,18 @@ h5 {
 	opacity: 0;
 	transform: translateY(100px);
 }
+
+.tag {
+	display: inline;
+	white-space: nowrap;
+}
+
+.inline:not(:last-child) .tag::after {
+	content: " | ";
+	word-spacing: 0.5em;
+	color: var(--accent-light);
+}
+
+.inline {
+	display: inline;
+}

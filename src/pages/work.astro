@@ -1,7 +1,161 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Icon from "../components/icon.astro";
+import type { iconPaths } from "../components/IconPaths";
+
+import Pill from "../components/work/pill.astro";
+
+interface Job {
+  company: string;
+  role: string;
+  date: string;
+  description: string;
+  skills: string[];
+  icon: keyof typeof iconPaths;
+}
+
+const jobs = [
+  {
+    company: "Pragma",
+    role: "Frontend team lead, full stack developer",
+    date: "2021 - Present",
+    description: "",
+    skills: [
+      "Design systems",
+      "Accessibility",
+      "Web development",
+      "Developer tools",
+    ],
+    icon: "aperture",
+  },
+  {
+    company: "MTP Services",
+    role: "Technology consultant, developer",
+    date: "2019 - 2021",
+    description: `
+In this role I have been exposed to a large variety of front end tools including React, Vue and Angular.<br/><br/>
+
+I have worked with different back end systems such as Azure, Sharepoint and Adobe AEM.<br/><br/>
+
+I engage with UX designers frequently to procude elegant solutions that comply with WCAG.<br/><br/>
+    `,
+    skills: [
+      "Rapid prototyping",
+      "Large scale applications",
+      "Feature development",
+    ],
+    icon: "computer-tower",
+  },
+  {
+    company: "Accenture",
+    role: "Digital technology specialist",
+    date: "2018 - 2019",
+    description: `
+In this role I worked closely with business analysts to provide technical consultancy for digitial solutions such as system architecture designs, security solutions and performance enhancements. <br/><br/>
+
+I developed front-end and back-end applications using NodeJs and upgraded workflow processes using Docker and Bash.
+    `,
+    skills: ["Data flow", "Data visualisation", "Data analysis"],
+    icon: "greater-than",
+  },
+  {
+    company: "Department of Defence",
+    role: "Software Engineer graduate",
+    date: "2016 - 2018",
+    description: `
+I developed knowledge of the defense and public service ecosystems through various rotations in different teams which helped in understanding the challenges of the growing cyber security threat. <br/><br/>
+
+I ran multiple projects with a large variety of tools, including React, ExpressJS, Flask, ELK Stack, MongoDB and Apache Nifi. <br/><br/>
+
+I provided support and technical solutions to critical operations.
+    `,
+    skills: [
+      "Ops support",
+      "Scripting",
+      "Android development",
+      "Full stack development",
+    ],
+    icon: "shield",
+  },
+] as Job[];
 ---
 
 <BaseLayout>
-  <main class="wrapper">Work</main>
+  <main class="wrapper">
+    <section class="work">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="content">
+        <ul>
+          {
+            jobs.map((job) => (
+              <li>
+                <div class="job">
+                  <div class="job-details">
+                    <div class="heading-row">
+                      <div class="job-icon">
+                        <Icon icon={job.icon} size={"2rem"} />
+                      </div>
+                      <h3>{job.company}</h3>
+                    </div>
+                    <b>{job.role}</b>
+                    <p>{job.date}</p>
+                    <p class="description" set:html={job.description} />
+
+                    <ul class="skills-list">
+                      {job.skills.map((skill) => (
+                        <li class="inline">
+                          <Pill name={skill} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </main>
 </BaseLayout>
+
+<style>
+  .work .content ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 2rem;
+    position: relative;
+  }
+
+  .work .content ul:before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 1px;
+    background: var(--gray-100);
+    top: 0;
+    left: 0;
+  }
+
+  .job {
+    margin-bottom: 2rem;
+  }
+
+  .job-details .heading-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .skills-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .description {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+</style>

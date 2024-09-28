@@ -1,12 +1,15 @@
 ---
 const { name, preview, description, link, imgLink } = Astro.props.project;
+import { Image } from "astro:assets";
 import Icon from "./icon.astro";
 ---
 
 <div class="project-card">
   <a class="card" href={preview}>
     <span class="title">{name}</span>
-    <img src={imgLink} alt={name || ""} loading="lazy" decoding="async" />
+
+    <Image src={imgLink()} width={imgLink().width / 2} alt={name || ""} />
+
     <p>{description}</p>
   </a>
   <a href={link}>View code <Icon icon="github-logo" /></a>

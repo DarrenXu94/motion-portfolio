@@ -18,12 +18,20 @@ export const projects = [
     imgLink: images["/src/assets/projects/civic-lunch-alpha.png"],
   },
   {
-    name: "Wordle animal ripoff",
-    preview: "https://animalle.darrenxu.com/",
-    description: "A wordle ripoff with animals",
-    link: "https://github.com/DarrenXu94/animalle",
-    imgLink: images["/src/assets/projects/animalle.png"],
+    name: "Developer blog",
+    preview: "https://blog.darrenxu.com/",
+    description: "A blog for my developer journey",
+    link: "https://github.com/DarrenXu94/blog",
+    imgLink: images["/src/assets/projects/blog.png"],
   },
+  {
+    name: "Online diplomacy resolver",
+    preview: "https://diplomacy.darrenxu.com/",
+    description: "A site to resolve online diplomacy games",
+    link: "https://github.com/DarrenXu94/diplomacy",
+    imgLink: images["/src/assets/projects/diplomacy.png"],
+  },
+
   {
     name: "Cookbook using Notion API",
     preview: "https://cookbook.darrenxu.com/",
@@ -45,51 +53,51 @@ export const projects = [
     link: "https://github.com/DarrenXu94/astro-dribl",
     imgLink: images["/src/assets/projects/futsal-scrape.png"],
   },
-  {
-    name: "Public API Displayer",
-    preview: "https://publicapi.darrenxu.com/",
-    description: "A site with a list of public free to use APIs",
-    link: "https://github.com/DarrenXu94/public-api-displayer",
-    imgLink: images["/src/assets/projects/apis.png"],
-  },
-  {
-    name: "Spritesheet Cropper",
-    preview: "https://spritesheet-cropper.vercel.app/",
-    description:
-      "NextJS app that cuts a single spritesheet into individual images",
-    link: "https://github.com/DarrenXu94/spritesheet-cropper",
-    imgLink: images["/src/assets/projects/spritesheet.png"],
-  },
-  {
-    name: "ThreeJS Portfolio",
-    preview: "https://three.darrenxu.com/",
-    description: "A demo site I made to test the skills I learn with ThreeJS",
-    link: "https://github.com/DarrenXu94/portfolio-three",
-    imgLink: images["/src/assets/projects/three-portfolio.gif"],
-  },
-  {
-    name: "LottieWeb Scroll",
-    preview: "https://lottietest.darrenxu.com/",
-    description:
-      "A demo site exploring LottieFiles, GSAP and scroll animations",
-    link: "https://github.com/DarrenXu94/lottie-testing",
-    imgLink: images["/src/assets/projects/lottie-scroll.gif"],
-  },
-  {
-    name: "Framer Motion Page Transition",
-    preview: "https://framer-transition.darrenxu.com/",
-    description: "Framer Motion page transition swipe effect",
-    link: "https://github.com/DarrenXu94/framer-page-transition",
-    imgLink: images["/src/assets/projects/framer-page.gif"],
-  },
-  {
-    name: "Video Play on Scroll",
-    preview: "https://scroll.darrenxu.com/",
-    description:
-      "Scrolling example using GSAP and TweenMagic to play a video on scroll",
-    link: "https://github.com/DarrenXu94/video-play-on-scroll",
-    imgLink: images["/src/assets/projects/play-on-scroll.gif"],
-  },
+  // {
+  //   name: "Public API Displayer",
+  //   preview: "https://publicapi.darrenxu.com/",
+  //   description: "A site with a list of public free to use APIs",
+  //   link: "https://github.com/DarrenXu94/public-api-displayer",
+  //   imgLink: images["/src/assets/projects/apis.png"],
+  // },
+  // {
+  //   name: "Spritesheet Cropper",
+  //   preview: "https://spritesheet-cropper.vercel.app/",
+  //   description:
+  //     "NextJS app that cuts a single spritesheet into individual images",
+  //   link: "https://github.com/DarrenXu94/spritesheet-cropper",
+  //   imgLink: images["/src/assets/projects/spritesheet.png"],
+  // },
+  // {
+  //   name: "ThreeJS Portfolio",
+  //   preview: "https://three.darrenxu.com/",
+  //   description: "A demo site I made to test the skills I learn with ThreeJS",
+  //   link: "https://github.com/DarrenXu94/portfolio-three",
+  //   imgLink: images["/src/assets/projects/three-portfolio.gif"],
+  // },
+  // {
+  //   name: "LottieWeb Scroll",
+  //   preview: "https://lottietest.darrenxu.com/",
+  //   description:
+  //     "A demo site exploring LottieFiles, GSAP and scroll animations",
+  //   link: "https://github.com/DarrenXu94/lottie-testing",
+  //   imgLink: images["/src/assets/projects/lottie-scroll.gif"],
+  // },
+  // {
+  //   name: "Framer Motion Page Transition",
+  //   preview: "https://framer-transition.darrenxu.com/",
+  //   description: "Framer Motion page transition swipe effect",
+  //   link: "https://github.com/DarrenXu94/framer-page-transition",
+  //   imgLink: images["/src/assets/projects/framer-page.gif"],
+  // },
+  // {
+  //   name: "Video Play on Scroll",
+  //   preview: "https://scroll.darrenxu.com/",
+  //   description:
+  //     "Scrolling example using GSAP and TweenMagic to play a video on scroll",
+  //   link: "https://github.com/DarrenXu94/video-play-on-scroll",
+  //   imgLink: images["/src/assets/projects/play-on-scroll.gif"],
+  // },
   {
     name: "Choccy Blog",
     preview: "https://choccy.darrenxu.com/",
@@ -107,26 +115,33 @@ export const projects = [
     imgLink: images["/src/assets/projects/will-it-cereal.png"],
   },
   {
-    name: "DBScan Visualisation",
-    description: "CanvasJS representation of the DBScan algorithm",
-    preview: "https://darrenxu94.github.io/dbscan-visualiser/",
-    link: "https://github.com/DarrenXu94/dbscan-visualiser",
-    imgLink: images["/src/assets/projects/db-scan.png"],
+    name: "Wordle animal ripoff",
+    preview: "https://animalle.darrenxu.com/",
+    description: "A wordle ripoff with animals",
+    link: "https://github.com/DarrenXu94/animalle",
+    imgLink: images["/src/assets/projects/animalle.png"],
   },
+  // {
+  //   name: "DBScan Visualisation",
+  //   description: "CanvasJS representation of the DBScan algorithm",
+  //   preview: "https://darrenxu94.github.io/dbscan-visualiser/",
+  //   link: "https://github.com/DarrenXu94/dbscan-visualiser",
+  //   imgLink: images["/src/assets/projects/db-scan.png"],
+  // },
 
-  {
-    name: "Beam Game",
-    preview: "https://darrenxu94.github.io/Beam/",
-    description: "A p5js game created for a fun side project",
-    link: "https://github.com/DarrenXu94/Beam",
-    imgLink: images["/src/assets/projects/beam.gif"],
-  },
-  {
-    name: "Web developer roadmap",
-    preview: "https://roadmapdxu.netlify.app/",
-    description:
-      "Explore a comprehensive web developer roadmap that lists essential technologies, outlining their basic functions and roles in web development. Perfect for beginners and professionals looking to stay updated.",
-    link: "https://github.com/DarrenXu94/roadmap",
-    imgLink: images["/src/assets/projects/roadmap.png"],
-  },
+  // {
+  //   name: "Beam Game",
+  //   preview: "https://darrenxu94.github.io/Beam/",
+  //   description: "A p5js game created for a fun side project",
+  //   link: "https://github.com/DarrenXu94/Beam",
+  //   imgLink: images["/src/assets/projects/beam.gif"],
+  // },
+  // {
+  //   name: "Web developer roadmap",
+  //   preview: "https://roadmapdxu.netlify.app/",
+  //   description:
+  //     "Explore a comprehensive web developer roadmap that lists essential technologies, outlining their basic functions and roles in web development. Perfect for beginners and professionals looking to stay updated.",
+  //   link: "https://github.com/DarrenXu94/roadmap",
+  //   imgLink: images["/src/assets/projects/roadmap.png"],
+  // },
 ];

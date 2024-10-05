@@ -6,28 +6,31 @@ export const projects = [
   {
     name: "Civic lunch",
     preview: "https://lunch.darrenxu.com/",
-    description: "Astro website with Notion API backend, hosted for free",
+    description:
+      "A blog website for my lunch adventures using Notion as the database",
     link: "https://github.com/DarrenXu94/new-civic-lunch",
     imgLink: images["/src/assets/projects/civic-lunch.png"],
   },
   {
     name: "Civic lunch alpha",
     preview: "https://civic-lunch.darrenxu.com/",
-    description: "A foodie's journey through lunch",
+    description:
+      "The first version of my civic lunch website. This was superseded by the new version as I wanted to be able to add new posts without having to edit markdown files manually",
     link: "https://github.com/DarrenXu94/awake-template",
     imgLink: images["/src/assets/projects/civic-lunch-alpha.png"],
   },
   {
     name: "Developer blog",
     preview: "https://blog.darrenxu.com/",
-    description: "A blog for my developer journey",
+    description: "A blog for my developer journey hosted with Github pages",
     link: "https://github.com/DarrenXu94/blog",
     imgLink: images["/src/assets/projects/blog.png"],
   },
   {
     name: "Online diplomacy resolver",
     preview: "https://diplomacy.darrenxu.com/",
-    description: "A site to resolve online diplomacy games",
+    description:
+      "I was playing this online game with my friends and I didn't want to learn the rules so I built a site to resolve the moves for me",
     link: "https://github.com/DarrenXu94/diplomacy",
     imgLink: images["/src/assets/projects/diplomacy.png"],
   },
@@ -35,14 +38,14 @@ export const projects = [
   {
     name: "Cookbook using Notion API",
     preview: "https://cookbook.darrenxu.com/",
-    description: "A cookbook site using the Notion API",
+    description: "A recipe site using the Notion API as the backend",
     link: "https://github.com/DarrenXu94/vue-cookbook",
     imgLink: images["/src/assets/projects/cookbook.png"],
   },
   {
     name: "Stocky timeline",
     preview: "https://www.stocky.darrenxu.com/",
-    description: "A timeline of the Stocky sharehouse (RIP)",
+    description: "A timeline of my first sharehouse.",
     link: "https://github.com/DarrenXu94/vue-stocky",
     imgLink: images["/src/assets/projects/stocky.gif"],
   },

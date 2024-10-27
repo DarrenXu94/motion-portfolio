@@ -12,14 +12,6 @@ export const projects = [
     imgLink: images["/src/assets/projects/civic-lunch.png"],
   },
   {
-    name: "Civic lunch alpha",
-    preview: "https://civic-lunch.darrenxu.com/",
-    description:
-      "The first version of my civic lunch website. This was superseded by the new version as I wanted to be able to add new posts without having to edit markdown files manually",
-    link: "https://github.com/DarrenXu94/awake-template",
-    imgLink: images["/src/assets/projects/civic-lunch-alpha.png"],
-  },
-  {
     name: "Developer blog",
     preview: "https://blog.darrenxu.com/",
     description: "A blog for my developer journey hosted with Github pages",

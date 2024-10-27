@@ -35,6 +35,13 @@ export const projects = [
     imgLink: images["/src/assets/projects/cookbook.png"],
   },
   {
+    name: "Portfolio v1",
+    preview: "https://darren-xu.netlify.app/",
+    description: "My first portfolio site",
+    link: "https://github.com/DarrenXu94/Dev-portfolio",
+    imgLink: images["/src/assets/projects/portfolio-v1.png"],
+  },
+  {
     name: "Stocky timeline",
     preview: "https://www.stocky.darrenxu.com/",
     description: "A timeline of my first sharehouse.",

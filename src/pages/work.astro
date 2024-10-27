@@ -90,7 +90,7 @@ Through different rotations, I gained insight into the defense and public servic
                       </div>
                       <h3>{job.company}</h3>
                     </div>
-                    <b>{job.role}</b>
+                    <b class="role">{job.role}</b>
                     <p>{job.date}</p>
                     <p class="description" set:html={job.description} />
 
@@ -113,6 +113,9 @@ Through different rotations, I gained insight into the defense and public servic
 </BaseLayout>
 
 <style>
+  .work .content {
+    padding-top: 1rem;
+  }
   .work .content ul {
     list-style: none;
     padding: 0;
@@ -132,6 +135,10 @@ Through different rotations, I gained insight into the defense and public servic
 
   .job {
     margin-bottom: 2rem;
+  }
+
+  .job .role {
+    color: var(--accent-light);
   }
 
   .job-details .heading-row {

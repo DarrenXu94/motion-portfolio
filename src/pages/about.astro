@@ -16,10 +16,11 @@ const skills = [
       <h2 class="section-title">Background</h2>
       <div class="content">
         <p>
-          My name is Darren. I am a full stack developer with a passion for UI
-          development and design. I enjoy crafting intuitive, user-friendly web
-          interfaces that are exciting and easy to use. I've been building all
-          kinds of web things for a while, and I'm always up for new challenges.
+          My name is Darren. I am a <b>full stack developer</b> with a passion for
+          UI development and design. I enjoy crafting <b>intuitive</b>, <b
+            >user-friendly</b
+          > web interfaces that are exciting and easy to use. I've been building
+          all kinds of web things for a while, and always up for a chat.
         </p>
       </div>
     </section>
@@ -97,7 +98,7 @@ const skills = [
 
   .content {
     grid-column: 2 / 4;
-    width: 75%;
+    width: 100%;
   }
 
   .content :global(a) {
@@ -125,6 +126,10 @@ const skills = [
 
     .about > :global(:first-child) {
       grid-column-start: 2;
+    }
+
+    .content {
+      width: 75%;
     }
 
     section {

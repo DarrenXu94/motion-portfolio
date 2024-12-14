@@ -20,7 +20,7 @@ const jobs = [
     role: "Frontend team lead, full stack developer",
     date: "2021 - Present",
     description: `
-  I lead a team of developers to build top-quality web apps for clients, using tools like Vue, web components, .Net, and TypeScript. I've helped launch several government websites and built tools to make life easier for both developers and designers. I also collaborate closely with accessibility experts and designers to create components that are not only functional but also meet top accessibility standards.
+  I <b>lead</b> a team of developers to build top-quality <b>web apps</b> for clients, using tools like Vue, web components, .Net, and TypeScript. I've helped launch several government websites and built <b>tools</b> to make life easier for both developers and designers. I also collaborate closely with <b>accessibility</b> experts and designers to create components that are not only functional but also meet top accessibility standards.
     `,
     skills: [
       "Design systems",
@@ -35,7 +35,7 @@ const jobs = [
     role: "Technology consultant, developer",
     date: "2019 - 2021",
     description: `
-I’ve had the chance to work with a wide range of front-end tools like React, Vue, and Angular, and back-end systems including Azure, SharePoint, and Adobe AEM. I’ve contributed to both large-scale products and quick-turnaround prototypes for clients. As a team lead, I’ve also been involved in product discovery and choosing the right tools for the job.
+I’ve had the chance to work with a <b>wide range</b> of front-end tools like React, Vue, and Angular, and back-end systems including Azure, SharePoint, and Adobe AEM. I’ve contributed to both <b>large-scale</b> products and quick-turnaround <b>prototypes</b> for clients. As a team lead, I’ve also been involved in <b>product discovery</b> and choosing the right tools for the job.
     `,
     skills: [
       "Rapid prototyping",
@@ -49,7 +49,7 @@ I’ve had the chance to work with a wide range of front-end tools like React, V
     role: "Digital technology specialist",
     date: "2018 - 2019",
     description: `
-I worked closely with business analysts to provide tech consultancy on things like system architecture, security solutions, and performance improvements. I built both front-end and back-end apps with Node.js and streamlined workflows using Docker and Bash.
+I worked closely with business analysts to provide <b>tech consultancy</b> on things like system architecture, security solutions, and performance improvements. I built both <b>front-end</b> and <b>back-end</b> apps with Node.js and streamlined workflows using Docker and Bash.
     `,
     skills: ["Data flow", "Data visualisation", "Data analysis"],
     icon: "greater-than",
@@ -59,7 +59,7 @@ I worked closely with business analysts to provide tech consultancy on things li
     role: "Software Engineer graduate",
     date: "2016 - 2018",
     description: `
-Through different rotations, I gained insight into the defense and public service sectors, especially around the growing cyber security challenges. I worked on several projects using a range of tools like React, ExpressJS, Flask, ELK Stack, MongoDB, and Apache NiFi. I also supported critical operations by offering technical solutions, picked up system administration and networking basics, built my own data transfer tool, and created graphical interfaces for data analysis.
+Through different rotations, I gained insight into the defense and public service sectors, especially around the growing <b>cyber security</b> challenges. I worked on several projects using a range of tools like React, ExpressJS, Flask, ELK Stack, MongoDB, and Apache NiFi. I also supported <b>critical</b> operations by offering technical solutions, picked up system administration and networking basics, built my own data transfer tool, and created graphical interfaces for data analysis.
     `,
     skills: [
       "Ops support",
@@ -157,7 +157,13 @@ Through different rotations, I gained insight into the defense and public servic
   .description {
     padding-bottom: 2rem;
     padding-top: 2rem;
-    width: 75%;
+    width: 100%;
     line-height: 2.5;
+  }
+
+  @media (min-width: 50em) {
+    .description {
+      width: 75%;
+    }
   }
 </style>

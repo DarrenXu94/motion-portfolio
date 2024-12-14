@@ -55,6 +55,13 @@ export const projects = [
     link: "https://github.com/DarrenXu94/astro-dribl",
     imgLink: images["/src/assets/projects/futsal-scrape.png"],
   },
+  {
+    name: "Tetris game",
+    preview: "https://darrenxu94.github.io/tetris-multiplayer/",
+    description: "A Tetris game",
+    link: "https://github.com/DarrenXu94/tetris-multiplayer",
+    imgLink: images["/src/assets/projects/tetris.png"],
+  },
   // {
   //   name: "Public API Displayer",
   //   preview: "https://publicapi.darrenxu.com/",
